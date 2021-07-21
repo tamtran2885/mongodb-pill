@@ -54,6 +54,31 @@ mongo --version
 >> MongoDB shell version v5.0.0
 ```
 
+Create a directory to store MongoDB Data
+```sh
+mkdir mongodb-data
+```
+
+Start the MongoDB server
+```sh
+mongod --dbpath mongodb-data
+```
+
+After some logs from the server, you should see a message like this:
+```sh
+{"t":{"$date":"2021-07-15T16:41:47.587+02:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+```
+
+Start the database client on a diferent terminal
+```sh
+mongo
+```
+
+Create a new databse
+```sh
+use books
+```
+
 ## Technologies used
 
 \* MongoDB
