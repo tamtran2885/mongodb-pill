@@ -1,7 +1,7 @@
 // Insert authors
 db.authors.insert({ name: 'AuthorName1', lastName: 'AuthorLastname1', dateOfBirth: '1950-02-01', dateOfDeath: '2020-02-01', country: 'Spain' })
 
-db.authors.insert({ name: 'AuthorName2', lastName: 'AuthorLastname2', dateOfBirth: '1960-02-01', dateOfDeath: '2020-02-01', country: 'Spain' })
+db.authors.insert({ name: 'AuthorName2', lastName: 'AuthorLastname2', dateOfBirth: '1960-02-01', country: 'Spain' })
 
 db.authors.insert({ name: 'AuthorName3', lastName: 'AuthorLastname3', dateOfBirth: '1970-02-01', country: 'France' })
 
