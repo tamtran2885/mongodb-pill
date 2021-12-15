@@ -1,0 +1,19 @@
+use("libraryDb")
+
+// change a date of birth to one Author
+db.authors.update(
+    { name: "Konstantin" },
+    { $set: { date_of_birth: "1892-05-31" } }
+)
+
+// Add a new release year to a book
+db.books.update(
+    { title: "The Golden Rose" },
+    { $push: { release_year: 2002 } }
+)
+
+// Change the title of a book adding (“New Edition”)
+db.books.update(
+    { title: "Twenty Thousand Leagues Under the Sea" },
+    { $set: { title: "Twenty Thousand Leagues Under the Sea (New edition)" } }
+)

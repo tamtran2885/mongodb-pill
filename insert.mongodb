@@ -1,0 +1,162 @@
+use("libraryDb")
+
+// Insert authors
+db.authors.insert({
+    name: "Mark",
+    lastName: "Twain",
+    date_of_birth: "1831-11-30",
+    date_of_death: "1910-04-21",
+    country: "America"
+})
+
+db.authors.insert({
+    name: "Jules",
+    lastName: "Verne",
+    date_of_birth: "1828-02-08",
+    date_of_death: "1905-03-24",
+    country: "France"
+})
+
+db.authors.insert({
+    name: "Konstantin",
+    lastName: "Paustovsky",
+    date_of_birth: "1892-05-19",
+    date_of_death: "1968-07-14",
+    country: "Russia"
+})
+
+// Insert Books
+
+// Of Paustovsky
+db.books.insert({
+    title: "The Golden Rose",
+    release_year: [1967],
+    category: "Novel",
+    authors: [
+        {
+            id: "61b9ca1c4a96b2ef1e7a0a60",
+            name: "Konstantin",
+            lastName: "Paustovsky",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "The Story of a Life",
+    release_year: [1956],
+    category: "Novel",
+    authors: [
+        {
+            id: "61b9ca1c4a96b2ef1e7a0a60",
+            name: "Konstantin",
+            lastName: "Paustovsky",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "The Ruffled Sparrow",
+    release_year: [1983],
+    category: "Novel",
+    authors: [
+        {
+            id: "61b9ca1c4a96b2ef1e7a0a60",
+            name: "Konstantin",
+            lastName: "Paustovsky",
+        }
+    ]
+})
+
+// Of Jules Verne
+db.books.insert({
+    title: "Twenty Thousand Leagues Under the Sea",
+    release_year: [2016],
+    category: "Sci-Fic",
+    authors: [
+        {
+            id: "61b9ca124a96b2ef1e7a0a5f",
+            name: "Jules",
+            lastName: "Verne",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "Journey to the Centre of the Earth",
+    release_year: [2008],
+    category: "Sci-Fic",
+    authors: [
+        {
+            id: "61b9ca124a96b2ef1e7a0a5f",
+            name: "Jules",
+            lastName: "Verne",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "Around the World in 80 Days",
+    release_year: [1989],
+    category: "Sci-Fic",
+    authors: [
+        {
+            id: "61b9ca124a96b2ef1e7a0a5f",
+            name: "Jules",
+            lastName: "Verne",
+        }
+    ]
+})
+
+// Of Mark Twain
+
+db.books.insert({
+    title: "The Adventures of Huckleberry Finn",
+    release_year: [1885],
+    category: "Adventure",
+    authors: [
+        {
+            id: "61b9c9f84a96b2ef1e7a0a5e",
+            name: "Mark",
+            lastName: "Twain",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "Life on the Mississippi",
+    release_year: [1883],
+    category: "Adventure",
+    authors: [
+        {
+            id: "61b9c9f84a96b2ef1e7a0a5e",
+            name: "Mark",
+            lastName: "Twain",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "A Dog’s Tale",
+    release_year: [1904],
+    category: "Adventure",
+    authors: [
+        {
+            id: "61b9c9f84a96b2ef1e7a0a5e",
+            name: "Mark",
+            lastName: "Twain",
+        }
+    ]
+})
+
+db.books.insert({
+    title: "Letters from the Earth",
+    release_year: [1962],
+    category: "Adventure",
+    authors: [
+        {
+            id: "61b9c9f84a96b2ef1e7a0a5e",
+            name: "Mark",
+            lastName: "Twain",
+        }
+    ]
+})
