@@ -32,14 +32,16 @@ To create a fork on GitHub is as easy as clicking the “fork” button on the r
 
 <img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
 
-### Installing 
+### Installing
 
 Go to the official MongoDB website and download the Community version of the engine from [here](https://www.mongodb.com/try/download/community).
 
 #### On Windows:
+
 Execute the installer.
 
 #### On UNIX / MacOS:
+
 Extract the content of the tgz file and move it to a directory on your PATH system variable:
 
 ```sh
@@ -55,53 +57,63 @@ mongo --version
 ```
 
 Create a directory to store MongoDB Data
+
 ```sh
 mkdir mongodb-data
 ```
 
 Start the MongoDB server
+
 ```sh
 mongod --dbpath mongodb-data
 ```
 
 After some logs from the server, you should see a message like this:
+
 ```sh
 {"t":{"$date":"2021-07-15T16:41:47.587+02:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
 ```
 
 Start the database client on a diferent terminal
+
 ```sh
 mongo
 ```
 
 Create a new databse
+
 ```sh
 use books
 ```
 
 ## Tasks
+
 Execute MongoDB queries for the following operations
 
 ### Insert data
+
 1. Insert at least 3 authors with the following fields
-    - Name: String
-    - Last name: String
-    - Date of Birth: Date
-    - Date of death: Date
-    - Country: String
+
+   - Name: String
+   - Last name: String
+   - Date of Birth: Date
+   - Date of death: Date
+   - Country: String
 
 2. Insert at least 10 books with the following fields:
-    - Title: String
-    - Release Year: [Date]
-    - Category: String
-    - Authors (id, name, lastName): [{id, name, lastName}, … ]
+   - Title: String
+   - Release Year: [Date]
+   - Category: String
+   - Authors (id, name, lastName): [{id, name, lastName}, … ]
 
 ### Update data
+
 1. Add a date of death to one Author
 2. Add a new release year to a book
 3. Change the title of a book adding (“New Edition”)
 
 ### Get data
+
 1. Select all books
 2. Select all books for a given category
 3. Select all books published before 2002
@@ -112,6 +124,7 @@ Execute MongoDB queries for the following operations
 8. Select all authors from a given country
 
 ### DELETE DATA
+
 1. Eliminate all the books for a given author
 2. Eliminate all the death authors
 
@@ -126,6 +139,7 @@ To deliver this project you must follow the steps indicated in the document:
 - [Submitting a solution](https://www.notion.so/Submitting-a-solution-524dab1a71dd4b96903f26385e24cdb6)
 
 ## Resources
+
 - [Official MongoDB documentation](https://www.mongodb.com)
 - [W3Schools MongoDB](https://www.w3schools.in/mongodb/query-operations)
 - [MongoDB queries](https://docs.mongodb.com/manual/tutorial/query-documents/)

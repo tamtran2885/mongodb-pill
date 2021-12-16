@@ -25,6 +25,14 @@ db.authors.insert({
     country: "Russia"
 })
 
+db.authors.insert({
+    "name": "name",
+    "lastName": "last name",
+    "date_of_birth": "1892-05-19",
+    "date_of_death": "1968-07-14",
+    "country": "country"
+})
+
 // Insert Books
 
 // Of Paustovsky
